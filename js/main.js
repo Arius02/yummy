@@ -545,6 +545,7 @@ $(document).ready(function () {
       }
       if (nameFlag && emailFlag && ageFlag && phoneFlag && passFlag & rePassFlag) {
         document.getElementById("submit").removeAttribute("disabled")
+
       } else {
         ocument.getElementById("submit").setAttribute("disabled", "true")
       }
@@ -561,7 +562,14 @@ $(document).ready(function () {
       $(".scroll").fadeOut()
     }
   })
-
+  $("#submit").click(function () {
+    let final = `<h2>Thanks ${nameVal}</h2>
+    <p>We will contact you soon...</p>
+    <p class="text-danger">If there is an emergency, you can visit us at our headquarters, 6 Al-Majd st. , Al-Zahraa Building, Aswan</p>`
+    $(".done").html(final)
+    $(".done").removeClass("d-none")
+  })
 });
+
 
 
