@@ -30,6 +30,7 @@ h2 {
   -o-transition:var(--mainTransition);
   -webkit-transition:var(--mainTransition);
   background-color: black;
+  height: 100vh !important;
   z-index: 99999;
 }
 .links-list {
