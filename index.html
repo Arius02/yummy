@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yummy</title>
+    <link rel="icon" href="img/logo.png">
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="css/style.css" />
+
+  </head>
+  <body>
+    <section>
+      <div
+        class="position-fixed d-none share bg-black bg-opacity-50 top-0 bottom-0 end-0 start-0  justify-content-center align-items-center"
+      >
+        
+          <div class="bg-white p-5  position-relative rounded-2 link-cont">
+
+            <p>
+            You can copy the link of the site and share it with your friends!
+          </p>
+          <p class="link text-white d-block p-3 rounded-2">
+            https://github.com/Arius02/yummy
+          </p>
+          <button class="btn position-absolute top-0 end-0 m-2 clipboard">
+            <i class="fa-regular fa-clipboard"></i>
+          </button>
+          <input type="text" class="d-none temp" name="" id="" />
+          <p
+            class="alert alert-secondary position-absolute bottom-0 p-1 start-50 translate-middle-x d-none"
+          >
+            Link Copied
+          </p>
+
+        </div>
+
+      </div>
+      <div class="d-flex position-fixed list-container">
+        <div
+          class="links-list ps-4 d-flex flex-column justify-content-between align-content-center"
+        >
+          <ul class="list-unstyled fw-light">
+            <li class="link-1">Search</li>
+            <li class="link-2">Categories</li>
+            <li class="link-3">Area</li>
+            <li class="link-4">Ingredients</li>
+            <li class="link-5">Contact Us</li>
+          </ul>
+          <div class="">
+            <div class="social-links mb-3">
+              
+                <a href="https://m.facebook.com/mahua07" target="_blank"><i class="fa-brands fa-facebook-f me-3"></i></a>
+                <a href="https://twitter.com/mahmou07" target="_blank""><i class="fa-brands fa-twitter me-3"></i></a>
+                <a href="https://www.linkedin.com/in/mahmouu" target="_blank""> <i class="fa-brands fa-linkedin-in"></i></a>
+              </div>
+            <p class="text-white fw-light pe-1">
+              Copyright Â© 2019 All Rights Reserved.
+            </p>
+          </div>
+        </div>
+        <div
+          class="toggle-div position-relative py-3 px-1 vh-100 d-flex flex-column justify-content-between align-items-center"
+        >
+          <img src="img/logo.png" alt="" />
+          <i class="fa fa-align-justify toggle-icon "></i>
+          <i class="fa fa-xmark closing d-none toggle-icon "></i>
+          <div>
+            <i class="fas fa-globe fw-bold d-block"></i>
+            <i class="fas fa-share-alt fw-bold mt-2 d-block"></i>
+          </div>
+          
+        </div>
+      </div>
+
+      <section class="py-5">
+        <div class="container w-75 d-none searchSection">
+          <div class="row search">
+            <div class="col-md-6">
+              <div>
+                <input
+                  type="text"
+                  class="form-control rounded-0"
+                  placeholder="Search By Name"
+                  name=""
+                  id="searcByName"
+                />
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div>
+                <input
+                  type="text"
+                  class="form-control rounded-0"
+                  placeholder="Search By Frist Letter..."
+                  name=""
+                  id="searchByLetter"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <section>
+          <div class="container w-75">
+            <div class="row mt-5 gy-4" id="data"></div>
+            <div
+              class="contact d-flex w-75 m-auto justify-content-center align-items-center flex-column d-none"
+            >
+              <h2 class="text-white mb-4">Contact Us..</h2>
+              <form action="">
+                <div class="row g-4">
+                  <div class="col-md-6">
+                    <div>
+                      <div class="position-relative">
+                        <input
+                          type="text"
+                          placeholder="Your Name"
+                          class="form-control"
+                          id="name"
+                        />
+                        <i
+                          class="fa-solid d-none fa-check me-2 text-success fa-xl position-absolute top-50 translate-middle-y end-0"
+                        ></i>
+                        <i
+                          class="fa-solid d-none fa-xmark me-2 text-danger fa-xl position-absolute top-50 translate-middle-y end-0"
+                        ></i>
+                      </div>
+                      <div class="alert alert-danger p-2 d-none mt-2"></div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div>
+                      <div class="position-relative">
+                        <input
+                          type="email"
+                          placeholder="Your Email"
+                          class="form-control"
+                          id="email"
+                        />
+                        <i
+                          class="fa-solid d-none fa-check me-2 text-success fa-xl position-absolute top-50 translate-middle-y end-0"
+                        ></i>
+                        <i
+                          class="fa-solid d-none fa-xmark me-2 text-danger fa-xl position-absolute top-50 translate-middle-y end-0"
+                        ></i>
+                      </div>
+                      <div class="alert alert-danger p-2 d-none mt-2"></div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div>
+                      <div class="position-relative">
+                        <input
+                          type="text"
+                          placeholder="Your Phone Number"
+                          class="form-control"
+                          id="phone"
+                        />
+                        <i
+                          class="fa-solid d-none fa-check me-2 text-success fa-xl position-absolute top-50 translate-middle-y end-0"
+                        ></i>
+                        <i
+                          class="fa-solid d-none fa-xmark me-2 text-danger fa-xl position-absolute top-50 translate-middle-y end-0"
+                        ></i>
+                      </div>
+                      <div class="alert alert-danger p-2 d-none mt-2"></div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div>
+                      <div class="position-relative">
+                        <input
+                          type="text"
+                          placeholder="Your Age"
+                          class="form-control"
+                          id="age"
+                        />
+                        <i
+                          class="fa-solid d-none fa-check me-2 text-success fa-xl position-absolute top-50 translate-middle-y end-0"
+                        ></i>
+                        <i
+                          class="fa-solid d-none fa-xmark me-2 text-danger fa-xl position-absolute top-50 translate-middle-y end-0"
+                        ></i>
+                      </div>
+                      <div class="alert alert-danger p-2 d-none mt-2"></div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div>
+                      <div class="position-relative">
+                        <input
+                          type="password"
+                          placeholder="Password"
+                          class="form-control"
+                          id="pass"
+                        />
+                        <i
+                          class="fa-solid d-none fa-check me-2 text-success fa-xl position-absolute top-50 translate-middle-y end-0"
+                        ></i>
+                        <i
+                          class="fa-solid d-none fa-xmark me-2 text-danger fa-xl position-absolute top-50 translate-middle-y end-0"
+                        ></i>
+                      </div>
+                      <div class="alert alert-danger p-2 d-none mt-2"></div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div>
+                      <div class="position-relative">
+                        <input
+                          type="password"
+                          placeholder="Re-Password"
+                          class="form-control"
+                          id="rePass"
+                        />
+                        <i
+                          class="fa-solid d-none fa-check me-2 text-success fa-xl position-absolute top-50 translate-middle-y end-0"
+                        ></i>
+                        <i
+                          class="fa-solid d-none fa-xmark me-2 text-danger fa-xl position-absolute top-50 translate-middle-y end-0"
+                        ></i>
+                      </div>
+                      <div class="alert alert-danger p-2 d-none mt-2"></div>
+                    </div>
+                  </div>
+                </div>
+                <button
+                  class="m-auto btn-danger btn mt-4 d-block"
+                  type="submit"
+                  id="submit"
+                  disabled
+                >
+                  Submit
+                </button>
+              </form>
+            </div>
+          </div>
+        </section>
+      </section>
+      <div class="scroll position-fixed rounded-circle">
+        <i class="fa fa-arrow-up"></i>
+      </div>
+      <div
+        class="inner-loading position-fixed justify-content-center top-0 start-0 end-0 bottom-0 align-items-center d-none"
+      >
+        <i class="fa-solid fa-spinner fa-spin text-white fa-5x"></i>
+      </div>
+    </section>
+    <div
+      class="loading position-fixed justify-content-center top-0 start-0 end-0 bottom-0 align-items-center"
+    >
+      <i class="fa-solid fa-spinner fa-spin text-white fa-5x"></i>
+    </div>
+    <script src="js/jquery-3.6.1.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
