@@ -357,7 +357,7 @@ $(document).ready(function () {
   let passVal = ``
   let rePassVal = ``
   let passRegex = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/
-  let ageRegex = /^(100|[1-9][8-9][0-9]?)$/
+  let ageRegex = /^[1-9]?[0-9]{1}$/
   let phoneRegex = /^([\+][2])?([0][1])[(1|0|2|5)][0-9]{8}$/
   let emailRegex = /^[a-zA-Z0-9]{2,10}@[a-zA-Z]{2,6}\.[a-zA-Z]{2,7}/
   let nameRegex = /^[a-zA-Z]{2,15}$/
